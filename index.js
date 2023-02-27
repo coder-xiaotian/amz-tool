@@ -1,7 +1,9 @@
 import puppeteer from "puppeteer";
 import fs from 'fs'
 
-const browser = await puppeteer.launch({headless: true})
+const browser = await puppeteer.launch({headless: true, args: [
+  "--no-sandbox", // 沙盒模式
+]})
 const page = (await browser.pages())[0]
 await page.setViewport({
   width: 1000,
