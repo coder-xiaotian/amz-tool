@@ -1,4 +1,5 @@
 import puppeteer from "puppeteer";
+import cron from "node-cron"
 import fs from 'fs'
 
 const browser = await puppeteer.launch({headless: true, args: [
