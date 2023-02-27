@@ -1,0 +1,16 @@
+{
+  "name": "amz-tools",
+  "version": "1.0.0",
+  "description": "amz tools",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "xiaotian",
+  "license": "ISC",
+  "dependencies": {
+    "node-cron": "^3.0.2",
+    "puppeteer": "^19.7.2"
+  }
+}
