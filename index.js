@@ -18,7 +18,9 @@ async function job() {
   try {
     await page.select('button[type="submit"]')
     await page.waitForSelector("#add-to-cart-button")
-  } catch (e) {} finally {
+  } catch (e) {
+    console.log("出现验证码")
+  } finally {
     console.log("添加到购物车")
     await page.click("#add-to-cart-button")
     await page.waitForNavigation()
